@@ -250,15 +250,30 @@ O reset foi retirado*/
   }
 }
 
-@media (max-width: 632px) {
-  h1 {
-    font-size: 2em;
-  }
+@media (max-width: 609px) {
+
   h2 {
     font-size: 1.7em;
   }
 
+  h3 {
+    font-size: 1.5em;
+  }
+
+  h4 {
+    font-size: 1.2em;
+  }
+
   #contact-form {
     padding: 20px 30px 30px 30px;
+  }
+}
+
+@media (min-width: 482px) {
+  h1 {
+    font-size: 1.6em;
+  }
+  h2 {
+    font-size: 1.2em;
   }
 }
