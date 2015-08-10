@@ -1,0 +1,264 @@
+/*--------------------
+        Global
+---------------------*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+#container {
+  display: table;
+  width: 70%;
+  margin: 10px auto;
+  overflow: auto;
+  background: #FFF;
+}
+
+p {
+  margin: 10px 0;
+  line-height: 1.5em;
+}
+
+h1 {
+  text-transform: capitalize;
+  font-size: 2.5em;
+  font-weight: bold;
+  margin: 20px 0 10px 0;
+  line-height: 1em;
+}
+
+h2, h3, h4 {
+  margin: 10px 0;
+}
+
+h2 {
+  font-size: 2.2em;
+}
+
+h3 {
+  font-size: 1.9em;
+}
+
+h4 {
+  font-size: 1.6em;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.clearfix:before, .clearfix:after {
+  content: ' ';
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.content-header {
+  border-bottom: 1px solid #DDD;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.content-footer {
+  border-top: 1px solid #DDD;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+/*-------------------
+      Main header
+---------------------*/
+
+#main-header {
+  border-bottom: 7px solid #4EA0D9;
+}
+
+#logo {
+  display: block;
+  margin: auto;
+}
+
+#titles {
+  margin-bottom: 20px;
+  padding: 10px;
+  text-align: center;
+  color: #333;
+}
+
+
+/*-------------------------
+      Page columns
+--------------------------*/
+
+#left-col {
+  float: left;
+  width: 48%;
+}
+
+#left-col .points li {
+  margin-bottom: 30px;
+}
+
+#left-col .points img {
+  float: left;
+  margin-right: 10px;
+}
+
+#left-col .points h4 {
+  padding-top: 5px;
+}
+
+#right-col {
+  float: right;
+  width: 48%;
+}
+
+#contact-form{
+  padding: 30px 20px 20px 20px;
+  border: 4px solid #4EA0D8;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  overflow: auto;
+  background: #F4F4F4;
+}
+
+#contact-form div {
+  margin-bottom: 20px;
+}
+
+#contact-form label {
+  display: inline-block;
+  width: 80px;
+  font-weight: bold;
+}
+
+#contact-form input[type='text'], 
+#contact-form input[type='email'] {
+  height: 25px;
+  width: 50%;
+  border: 1px solid #CCC;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+#contact-form input[type='submit'] {
+  display: block;
+  float: right;
+  padding: 12px 17px;
+  background: #FA6E3E;
+  color: #FFF;  
+  border: 0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+#contact-form input[type='submit']:hover {
+  background: #D55427;
+  cursor: pointer;
+}
+
+#contact-form .content-footer p { 
+  font-style: italic;
+  text-align: center;
+  color: #777;
+  font-size: .8em;
+}
+
+/*--------------------------
+      Testimonials
+--------------------------*/
+
+#testimonials {
+  display: table-row;
+  margin: 40px 0;
+  color: #777;
+}
+
+#testimonials img {
+  float: left;
+  margin-right: 20px;
+}
+
+/*Blockquote com estilo padrão.
+O reset foi retirado*/
+
+#testimonials blockquote {
+  padding: 20px 30px;
+  width: 90%;
+}
+
+
+/*-------------------------
+      Main footer
+--------------------------*/
+
+#main-footer {
+  border-top: 1px solid #CCC;
+  text-align: center;
+  color: #AAA;
+}
+
+
+/*------------------------
+      Media Queries
+-------------------------*/
+
+@media (max-width:850px) {
+  #container {
+    width: 80%;
+  }
+
+  h1 {
+    font-size: 2.2em;
+  }
+
+  #left-col, #right-col {
+    width: 100%;
+    float: none;
+  }
+
+  #left-col .points li{
+    width: 80%;
+    margin: 0 auto 30px;
+    padding: 8px;
+    background: #EEE;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+
+  #left-col .points img {
+    margin-top: 10px;
+  }
+
+  #testimonials img {
+    display: block;
+    margin: 20px auto;
+    float: none;    
+  }
+}
+
+@media (max-width: 632px) {
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.7em;
+  }
+
+  #contact-form {
+    padding: 20px 30px 30px 30px;
+  }
+}
